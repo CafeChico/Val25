@@ -1,0 +1,128 @@
+:root {
+	--background-image-login: url('./log-in/Log-in.png');
+	--background-image-web: url('./log-in/sunset1.jpg');
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	background-image: var(--background-image-web);
+	background-size: cover;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.login-container {
+	background-color: #fff;
+	height: 450px;
+	padding: 20px;
+	border-radius: 8px;
+	background-image: var(--background-image-login);
+	background-size: cover;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 500px;
+}
+
+h2	{
+	margin-bottom: 20px;
+	color: white;
+}
+
+p	{
+	margin-bottom: 20px;
+	color: white;
+}
+
+label {
+	display: block;
+	color: white;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input {
+	width: 80%;
+	padding: 10px;
+	background-color: #9ABDDC;
+	color: #000000;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+button	{
+	margin-top: 15px;
+	width: 100%;
+	padding: 10px;
+	background-color: #BDD5E7;
+	color: #000000;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #AECCE4;
+}
+
+#message {
+	margin-top: 15px;
+	color: red;
+}
+
+}.popup .overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+	display: none;
+}
+
+.popup .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	background: #fff;
+	width: 500px;
+	height: 300px;
+	z-index: 2;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.popup .close-button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	background: #222;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.popup.active .overlay {
+	display: block;
+}
+
+.popup.active .content {
+	transition: all 100ms ease-in-out;
+	transform: translate(-50%, -50%) scale(1);
+}
+
