@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<title>Sanhua Game 2</title>
+	<script type="text/javascript" src="logic.js"></script>
+</head>
+<body>
+	<br>
+	<h1>Sanhua Puzzle Game (Prototype)</h1>
+	<div class="game-container">
+	<div id="board"></div>
+	<div id="pieces"></div>
+	</div>
+	<br>
+	<h2>Turns: <span id="turns">0</span></h2>
+	<h2>Created by Cafe Chico</h2>
+
+	<div class="popup" id="popup-1">
+		<div class="overlay">
+			<div class="content">
+				<div class="close-button" onclick="togglePopup()">&times;</div>
+				<h1>Level Complete</h1>
+				<p>Congrats you won!!</p>
+				<a href="" target="_self" title="Directs to the next level">
+				<button class="next-page"> Proceed to next level</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
